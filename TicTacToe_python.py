@@ -1,13 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
+# Winning Camp 2022
 
-# In[1]:
+# Name - Ritika Verma
+# UID - 21MCA2117
 
+# Project - Tic-Tac-Toe game
 
-# Tic Tac Toe game with GUI
-# using tkinter
-
-# importing all necessary libraries
 import random
 import tkinter
 from tkinter import *
@@ -15,15 +12,12 @@ from functools import partial
 from tkinter import messagebox
 from copy import deepcopy
 
-# sign variable to decide the turn of which player
 sign = 0
 
-# Creates an empty board
 global board
 board = [[" " for x in range(3)] for y in range(3)]
 
 # Check l(O/X) won the match or not
-# according to the rules of the game
 def winner(b, l):
 	return ((b[0][0] == l and b[0][1] == l and b[0][2] == l) or
 			(b[1][0] == l and b[1][1] == l and b[1][2] == l) or
@@ -231,9 +225,6 @@ def play():
 # Call main function
 if __name__ == '__main__':
 	play()
-
-
-# In[ ]:
 
 
 
